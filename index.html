@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="CSS/containerPincipal.css">
+    <link rel="stylesheet" href="CSS/fonts/style.css">
 </head>
 <body>
     <div class="container" id="container">
         <div class="head">
             <ul>
                 <li><a href="#acerca">Acerca de mi</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#empleos">Empleos</a></li>
             </ul>
         </div>
         <div class="head-img">
             <div class="head-saludo">
                 ¡Hola! soy Daniel
+            </div>
+            <div>
+                <span class="icon-document-file-sql"></span>
             </div>
         </div>
         <div class="acercaDeMi observador" id="acerca">
@@ -29,7 +33,7 @@
                 <div class="contenido-texto">
                 ¡Hola! mi nombre es Daniel Guarneros, tengo 23 años, vivo en el Estado de Mexico, actualmente estoy en el 7mo semestre de 
                 la carrera de Ingenieria en Sistemas Computacionales del Tecnologico de Estudios Superiores de 
-                Ecatepec (TESE). Soy un apasionado de la programacion (FrontEnd), me gusta aprender cosas nuevas día con día.
+                Ecatepec (TESE). Soy un apasionado de la programacion, me gusta aprender cosas nuevas día con día.
                 Me gusta tomar desafios y comprometerme con ellos, me gusta la naturaleza y estar al aire libre.
                 </div>
                 <div class="contenido-img">
@@ -37,8 +41,47 @@
                 </div>
             </div>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="habilidades" class="habilidades observador">
+            <div class="titulo">Habilidades</div>
+            <div class="container-habilidades">
+            <div class="habilidades-icon"><span class="icon-html5"></span><h6 class="nombre">HTML5</h6></div>
+            <div class="habilidades-icon"><span class="icon-css3"></span><h6 class="nombre">CSS</h6></div>
+            <div class="habilidades-icon"><span class="icon-javascript"></span><h6 class="nombre">JavaScript</h6></div>
+            <div class="habilidades-icon"><span class="icon-java"></span><h6 class="nombre">Java</h6></div>
+            <div class="habilidades-icon"><span class="icon-document-file-sql"></span><h6 class="nombre">SQL Server</h6></div>
+            <div class="habilidades-icon"><span class="icon-github"></span><h6 class="nombre">Git Hub</h6></div>
+            <div class="habilidades-icon"><span class="icon-tux"></span><h6 class="nombre">Linux</h6></div>
+            <div class="habilidades-icon"><span class="icon-microsoftoffice"></span><h6 class="nombre">Office</h6></div>
+            </div>
+        </div>
+        <div id="empleos" class="observador">
+            <div class="titulo">Empleos</div>
+            <div class="titulo">Mesero</div>
+            <div class="contenido-texto">
+                <p>Labore como mesero en el Salon de Eventos Coligan ubicado en Gral. Abundio R. Gómez, 
+                Granjas Independencia B, 55290 Ecatepec de Morelos, Méx. De agosto del 2017 a febrero 
+                del 2020, mis principales actividades era servir al comensal, ayuda en la cocina, montar 
+                y desmontar todo lo requerido del evento.</p>
+                <p>Jefa Directa:Patricia</p>
+                <p>Capitana:Angelica</p>
+            </div>
+            <div class="titulo">Ejecutivo telefonico</div>
+            <div class="contenido-texto">
+                <p>Labore como ejecutivo telefonico  en Call-Center Services, S.A de C.V ubicado en Calz. 
+                San Antonio Abad, Tránsito, Cuauhtémoc, 06820 Ciudad de México, CDMX. Del 15 de Junio de 2019
+                a Agosto del 2019, me dedicaba a llamar a por telefono a posibles clientes para la portabilidad 
+                de compañia telefonica (Movistar).</p>
+            </div>
+        </div>
+        <footer>
+            <div id="containerRedes"> 
+                <div id="Instagram" class="redes"><a href="https://www.instagram.com/danielgm123" target="_blank"><span class="icon-instagram"></span></a></div>
+                <div id="Facebook" class="redes"><a href="https://www.facebook.com/daniel.guarnerosmarquez.3" target="_blank"><span class="icon-facebook"></span></a></div>
+                <div id="Whatsapp" class="redes"><a href="https://wa.me/5565659766" target="_blank"><span class="icon-whatsapp"></span></a></div>
+        </div>
+        </footer>
     </div>
+    
     <script src="JS/Animaciones.js"></script>
 </body>
 </html>
