@@ -12,88 +12,103 @@
 </head>
 <body>
     <div class="container" id="container">
-        <div class="head">
+        <div class="head">  <!--Empieza el encabezado-->
             <ul>
                 <li><a href="#acerca">Acerca de mi</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#empleos">Empleos</a></li>
+                <li><a href="#hobby">Intereses</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </div>
-        <div class="head-img">
+        </div> <!--Acaba el encabezado-->
+        <div class="head-img"> <!--Portada--> 
             <div class="head-saludo">
                 ¡Hola! soy Daniel
             </div>
-            <div>
-               
-            </div>
-        </div>
-        <div class="acercaDeMi observador" id="acerca">
-            <div class="titulo">
-                Acerca de mi
-            </div>
-            <div class="contenido">
-                <div class="contenido-texto">
-                ¡Hola! mi nombre es Daniel Guarneros, tengo 23 años, vivo en el Estado de Mexico, actualmente estoy en el 7mo semestre de 
-                la carrera de Ingenieria en Sistemas Computacionales del Tecnologico de Estudios Superiores de 
-                Ecatepec (TESE). Soy un apasionado de la programacion, me gusta aprender cosas nuevas día con día.
-                Me gusta tomar desafios y comprometerme con ellos, me gusta la naturaleza y estar al aire libre.
+        </div>                 <!--Acaba la portada-->
+        <div id="acerca" class="container-acerca ob"><!--Empieza Acerca de mi-->
+            <div class="container-acerca-informacion">
+                <div class="titulo"><h2>Daniel Guarneros </h2></div>
+                <div class="subtitulo"><h4>Estudiante y Programador web</h4></div>
+                <div class="contenido">
+                    <br>
+                    <p>¡Hola! mi nombre es Daniel Guarneros, tengo 23 años, vivo en el Estado de Mexico,
+                        actualmente estoy en el 7mo semestre de la carrera de Ingenieria en Sistemas 
+                        Computacionales del Tecnologico de Estudios Superiores de Ecatepec (TESE). 
+                    </p>
+                    <br>
+                    <p>
+                        Soy apasionado de la programacion, me gusta aprender cosas nuevas día con día. Tengo 
+                        un año programando en las tecnologias web tales como JavaScript CSS y HTML.
+                    </p>
+                    <br>
+                    <p>Me gusta tomar desafios y comprometerme con ellos, me gusta la naturaleza y estar 
+                    al aire libre.</p>
                 </div>
-                <div class="contenido-img">
-                    <img src="Imagenes/yo.jpg" alt="Daniel" id="yo">
+                <div class="curriculum">
+                    <a href="Curriculum.pdf" target="_blanck">DESCARGA MI CV</a>
                 </div>
             </div>
-        </div>
-        <div id="habilidades" class="habilidades observador">
-            <div class="titulo">Habilidades</div>
+            <div class="foto">
+                <img src="Imagenes/yo.jpg" alt="Daniel">
+            </div>
             <div class="container-habilidades">
-            <div class="habilidades-icon"><span class="icon-html5"></span><h6 class="nombre">HTML5</h6></div>
-            <div class="habilidades-icon"><span class="icon-css3"></span><h6 class="nombre">CSS</h6></div>
-            <div class="habilidades-icon"><span class="icon-javascript"></span><h6 class="nombre">JavaScript</h6></div>
-            <div class="habilidades-icon"><span class="icon-java"></span><h6 class="nombre">Java</h6></div>
-            <div class="habilidades-icon"><span class="icon-document-file-sql"></span><h6 class="nombre">SQL Server</h6></div>
-            <div class="habilidades-icon"><span class="icon-github"></span><h6 class="nombre">Git Hub</h6></div>
-            <div class="habilidades-icon"><span class="icon-tux"></span><h6 class="nombre">Linux</h6></div>
-            <div class="habilidades-icon"><span class="icon-microsoftoffice"></span><h6 class="nombre">Office</h6></div>
-            </div>
-        </div>
-        <div id="empleos" class="observador">
-            <div class="titulo">Empleos</div>
-            <div class="titulo">Mesero</div>
-            <div class="contenido-texto">
-                <p>Labore como mesero en el Salon de Eventos Coligan ubicado en Gral. Abundio R. Gómez, 
-                Granjas Independencia B, 55290 Ecatepec de Morelos, Méx. De agosto del 2017 a febrero 
-                del 2020, mis principales actividades era servir al comensal, ayuda en la cocina, montar 
-                y desmontar todo lo requerido del evento.</p>
-                <p>Jefa Directa:Patricia</p>
-                <p>Capitana:Angelica</p>
-            </div>
-            <div class="titulo">Ejecutivo telefonico</div>
-            <div class="contenido-texto">
-                <p>Labore como ejecutivo telefonico  en Call-Center Services, S.A de C.V ubicado en Calz. 
-                San Antonio Abad, Tránsito, Cuauhtémoc, 06820 Ciudad de México, CDMX. Del 15 de Junio de 2019
-                a Agosto del 2019, me dedicaba a llamar a por telefono a posibles clientes para la portabilidad 
-                de compañia telefonica (Movistar).</p>
-            </div>
-        </div>
-        <footer>
-            <div id="contacto" class="footer-clases">
-                <div class="footer-titulo">Contacto</div>
-                <p>Telefono:26-17-72-23</p>
-                <p>Celular:(55)65-65-97-66</p>
-                <p>Correo:dguarnerosmarquez@gmail.com</p>
-            </div>
-            <div id="redes">
-                <div class="footer-titulo" class="footer-clases">Redes</div>
-                <a href="https://www.instagram.com/danielgm123" target="_blank"><div id="Instagram" class="redes"><span class="icon-instagram"></span></div></a>
-                <a href="https://www.facebook.com/daniel.guarnerosmarquez.3" target="_blank"><div id="Facebook" class="redes"><span class="icon-facebook"></span></div></a>
-                <a href="https://wa.me/5565659766" target="_blank"><div id="Whatsapp" class="redes"><span class="icon-whatsapp"></span></div></a>
-                <div id="Twitter" class="redes"><span class="icon-twitter"></span></div>
+                <div class="container-habilidades-titulo"><h2>Habilidades</h2></div>
+                <div class="habilidades-icon"><span class="icon-html5"></span></div>
+                <div class="habilidades-icon"><span class="icon-css3"></span></div>
+                <div class="habilidades-icon"><span class="icon-javascript"></span></div>
+                <div class="habilidades-icon"><span class="icon-java"></span></div>
+                <div class="habilidades-icon"><span class="icon-document-file-sql"></span></div>
+                <div class="habilidades-icon"><span class="icon-github"></span></div>
+                <div class="habilidades-icon"><span class="icon-tux"></span></div>
+                <div class="habilidades-icon"><span class="icon-microsoftoffice"></span></div>
+            </div>                                     
+        </div>           <!--Acaba Acerca de mi-->
+        <div class="container-interes" id="hobby">
+            <div class="container-interes-titulo"><h2>Intereses</h2></div>
+            <div class="interes1 interes">
+                <div class="container-interes-contenido">
+                    <h2>Futbol</h2>
+                    <br>
+                    <p>Soy una apasionado del futbol, es mi deporte favorito y cuando se presenta la ocacion de poder jugarlo, la tomo</p>
+                    <p>Mi hobbyt numero 1</p>
                 </div>
-            <div id="Despedida" class="footer-clases">
-                <div class="footer-titulo">Despedida</div>
-                <p>Gracias por tomarse el tiempo de leer este Portafolio</p>
             </div>
-        </footer>
+            <div class="interes2 interes">
+                <div class="container-interes-contenido">
+                <h2>100 Años de soledad</h2>
+                <br>
+                <p>100 Años de soledad es mi libro favorito, fue escrito por Gabirel Garcia Marquez, ganador del premio novel en 1982.</p>
+                <p>Es considerada una obra maestra de la literatura hispanoamericana y universal</p>
+                </div>
+            </div>
+            <div class="interes3 interes">
+                <div class="container-interes-contenido">
+              <h2>Correr</h2>
+              <br>
+              <p>Correr es otro pasatiempo que me gusta practicar, trato de correr por lo menos 3 veces a la semana, me ayuda mucho con las endorfinas </p>
+                </div>
+            </div>
+            <div class="interes4 interes">
+                <div class="container-interes-contenido">
+                <h2>Aire libre</h2>
+                <br>
+                <p>Estar al aire libre es algo que me fascina, me ayuda a despejar cosas de mi mente y concentrarme en las cosas que tengo pendientes.</p>
+                </div>
+            </div>
+            <div class="interes5 interes">
+                <div class="container-interes-contenido">
+               <h2>Programar</h2>
+               <br>
+               <p>Programar es otro de mis hobbys, me gusta aprender cosas nuevas dia con dia, en ocasiones me pongo pequeños retos para poder mejorar mi logica de programacion y ser un mejor programador</p>
+               </div>
+            </div>  
+            <div class="interes6 interes">
+                <div class="container-interes-contenido">
+                <h2>The Boys</h2>
+                <br>
+                <p>Me gusta ver cualquier tipo de series pero mi preferida es "The Boys"</p>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="JS/Animaciones.js"></script>
 </body>
