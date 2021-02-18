@@ -15,7 +15,7 @@ body{
     background:rgb(0, 145, 255);
     font-size: 16px;
 }
-/* -------------------------------Empieza la cabecera-------------------------------------*/
+    /* -------------------------------Empieza la cabecera-------------------------------------*/
 .container{
     display:inline-flex;
     flex-flow:row wrap;
@@ -164,7 +164,7 @@ li a:hover{
     font-size:3.5rem;
 }
 /* -------------------------------Acaba acerca de mi -------------------------------------*/
-/* -------------------------------Empieza hobby -------------------------------------*/
+/* -------------------------------Empieza Interes -------------------------------------*/
 .container-interes{
     display:inline-grid;
     box-sizing: border-box;
@@ -234,5 +234,35 @@ li a:hover{
     font-family: Arial, Helvetica, sans-serif;
     opacity:0;
     transition:opacity 1s;
-
 }
+/* -------------------------------Acaba Interes -------------------------------------*/
+/* -------------------------------Empieza contacto ----------------------------------*/
+#contacto{
+    display: flex;
+    box-sizing: border-box;
+    width:100%;
+    height:350px;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-formulario{
+    display:inline-flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    height:320px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contacto-formulario-titulo{
+    font-size:25px;
+    border-top:2px solid rgb(199, 3, 124) ;
+    border-bottom: 2px solid rgb(199, 3, 124);
+}
+input{
+    width:305px;
+    height:25px;
+    border-radius:5px;
+   
+}
+/* -------------------------------Acaba contacto ----------------------------------*/
