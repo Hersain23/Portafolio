@@ -5,7 +5,7 @@ const d = document;
 
 d.addEventListener("submit",e=>{
     e.preventDefault();
-    if(expresionAsunto.test($form.asunto.value) && expresionCorreo.test($form.correo.value) || $form.asunto.value==""){
+    if(expresionAsunto.test($form.asunto.value) && expresionCorreo.test($form.correo.value) || $form.asunto.value=="" && $form.correo.value==""){
         $form.asunto.style.border="2px solid red"
         $form.correo.style.border="2px solid red"
     }else{
@@ -15,10 +15,19 @@ d.addEventListener("submit",e=>{
         })
         .then(res=> res.ok ? res.json():Promise.reject(res))
         .then(json =>{
-            console.log(`Exito perro ${json}`);
+            alert("Se envio correctamente la informacion")
+            clearForm();
         })
         .catch(err => {
             console.log(`Ocurrio un error ${err}`);
         })
     }
 })
+
+function clearForm(){
+    $form.asunto.value="";
+    $form.correo.value="";
+    $form.mensaje.value="";
+    $form.asunto.style.border ="0px solid black"
+    $form.correo.style.border ="0px solid black"
+}

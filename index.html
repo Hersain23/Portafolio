@@ -9,22 +9,33 @@
     <link rel="stylesheet" href="CSS/fonts/style.css">
     <link rel="shortcut icon" type="image/png" href="portafolio.png">
     <title>Portafolio</title>
+    
 </head>
 <body>
-    <div class="container" id="container">
-        <div class="head">  <!--Empieza el encabezado-->
-            <ul>
+    <div class="carga">
+        <img src="Imagenes/carga.png" alt="Load" id="carga">
+    </div>
+        <div class="head cuerpo">  <!--Empieza el encabezado-->
+            <div class="menu-despegable">
+                <div class="menu-despegable-titulo"><div class="botonBurger">Menu</div></div>
+                <ul class="menu-despegable-ul-li">
+                <li><a href="#acerca">Acerca</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <ul class="ul">
                 <li><a href="#acerca">Acerca de mi</a></li>
                 <li><a href="#hobby">Intereses</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div> <!--Acaba el encabezado-->
-        <div class="head-img"> <!--Portada--> 
+        <div class="head-img cuerpo"> <!--Portada--> 
             <div class="head-saludo">
                 ¡Hola! soy Daniel
             </div>
         </div>                 <!--Acaba la portada-->
-        <div id="acerca" class="container-acerca ob"><!--Empieza Acerca de mi-->
+        <div id="acerca" class="container-acerca ob cuerpo"><!--Empieza Acerca de mi-->
             <div class="container-acerca-informacion">
                 <div class="titulo"><h2>Daniel Guarneros </h2></div>
                 <div class="subtitulo"><h4>Estudiante y Programador web</h4></div>
@@ -50,7 +61,7 @@
             <div class="foto">
                 <img src="Imagenes/yo.jpg" alt="Daniel">
             </div>
-            <div class="container-habilidades">
+            <div class="container-habilidades" id="habilidades">
                 <div class="container-habilidades-titulo"><h2>Habilidades</h2></div>
                 <div class="habilidades-icon"><span class="icon-html5"></span></div>
                 <div class="habilidades-icon"><span class="icon-css3"></span></div>
@@ -62,10 +73,11 @@
                 <div class="habilidades-icon"><span class="icon-microsoftoffice"></span></div>
             </div>                                     
         </div>           <!--Acaba Acerca de mi-->
-        <div class="container-interes" id="hobby">
+        
+        <div class="container-interes cuerpo" id="hobby">
             <div class="container-interes-titulo"><h2>Intereses</h2></div>
             <div class="interes1 interes">
-                <div class="container-interes-contenido">
+                <div class="container-interes-contenido container-interes-contenido-query">
                     <h2>Futbol</h2>
                     <br>
                     <p>Soy una apasionado del futbol, es mi deporte favorito y cuando se presenta la ocacion de poder jugarlo, la tomo</p>
@@ -109,24 +121,21 @@
                 </div>
             </div>
         </div>
-        <div id="contacto">
-            <div class="contacto-formulario">
-                <div class="contacto-formulario-titulo">¡Enviame un correo!</div>
-                <form action="https://formsubmit.co/dguarnerosmarquez@gmail.com" method="POST" target="_blank" id="form">
-                    <br><br>
-                   Asunto <input type="text" placeholder="Asunto" name="asunto">
-                   Correo <input type="email" placeholder="Correo Electronico" name="correo">
-                    <br>
-                    <br>
-                    <textarea name="mensaje" id="area" cols="100" rows="10"></textarea>
-                    <br>
-                    <br>
-                    <input type="submit" id="btn" name="enviar" placeholder="Escribe tu mensaje"> 
-                </form>
-            </div>
+        <div id="contacto" class="cuerpo">
+            
         </div>
-    </div>
+        <div id="containerRedes" class="cuerpo"> 
+            <a href="https://www.instagram.com/danielgm123/" target="_blanck"><div id="Instagram" class="redes"><span class="icon-instagram"></span></div></a>
+            <a href="https://www.facebook.com/daniel.guarnerosmarquez.3/" target="_blanck"><div id="Facebook" class="redes"><span class="icon-facebook"></span></div></a>
+            <a href="https://web.whatsapp.com/5565659766/%Hola como estas/" target="_blanck"><div id="Whatsapp" class="redes"><span class="icon-whatsapp"></span></div></a>
+        </div>
+        <div class="up">
+            <span class="icon-circle-up"></span>
+        </div>
+        <script src="JS/carga.js"></script>
     <script src="JS/Animaciones.js"></script>
     <script src="JS/expresiones.js"></script>
+    <script src="JS/botonUp.js"></script>
+    <script src="JS/mediaQuerys.js"></script>
 </body>
 </html>

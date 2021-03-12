@@ -1,6 +1,8 @@
 const $observador = document.querySelectorAll(".ob");
 const $acerca = document.getElementById("acerca");
 const $intereses = document.querySelectorAll(".container-interes-contenido");
+const $up = document.querySelector(".icon-circle-up");
+let mediaQuery = window.matchMedia("(max-width:720px)")
 const options = {
     root:document.getElementById("container"),
     threshold:.45
@@ -14,12 +16,12 @@ function call(entries){
         if(element.target == $acerca){
             if(element.isIntersecting){
                 $acerca.style.opacity="1";
+                $up.style.opacity="1";
             }
         }       
     });
     
 }
-
 $intereses.forEach(element => {
     element.addEventListener("mouseover",e=>{
         element.style.opacity="1"
