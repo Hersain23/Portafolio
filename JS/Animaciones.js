@@ -5,6 +5,7 @@ const $contacto = document.getElementById("contacto");
 const $r = document.getElementById("containerRedes");
 const $up = document.querySelector(".icon-circle-up");
 let mediaQuery = window.matchMedia("(max-width:720px)")
+let media = matchMedia("(max-width:720px)");
 const options = {
     root:document.getElementById("container"),
     threshold:.45

@@ -1,17 +1,17 @@
-let up = document.querySelector(".up");
+const $botonUp = document.querySelector(".up");
 let id;
 window.addEventListener("scroll",scroleo);
 function scroleo(e){
     if(window.scrollY>100){
-        up.style.opacity="1";
+        $botonUp.style.opacity="1";
     }
     else if(window.scrollY < 10){
-        up.style.opacity="0";
+        $botonUp.style.opacity="0";
         clearInterval(id)
     }
 }
 
-up.addEventListener("click",oyente);
+$botonUp.addEventListener("click",oyente);
 
 function oyente(e){
     id = setInterval((e)=>{
